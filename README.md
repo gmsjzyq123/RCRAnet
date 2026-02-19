@@ -25,8 +25,8 @@ The following datasets are used for experiments:
 - HyRANK: A cross-scene hyperspectral dataset designed for domain generalization and land-cover classification tasks, consisting of two geographically distinct scenes:
   - `Dioni.mat: Hyperspectral image of the Dioni scene.
   - `Dioni_gt_out68.mat: Corresponding ground truth labels for Dioni.
- - `Loukia.mat: Hyperspectral image of the Loukia scene.
- - `Loukia_gt_out68.mat: Corresponding ground truth labels for Loukia.
+  - `Loukia.mat: Hyperspectral image of the Loukia scene.
+  - `Loukia_gt_out68.mat: Corresponding ground truth labels for Loukia.
 
 File Structure:
 ```
