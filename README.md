@@ -1,13 +1,10 @@
 # Diversity-Driven Domain Generalization for Hyperspectral Image via Rank-Increased Attention Fusion.
 
-```
-
 ## Requirements
 - **Python**: 3.8.19  
 - **PyTorch**: 1.11.0  
 - **CUDA**: 11.3  
 
-```
 
 ```
 ## Datasets
