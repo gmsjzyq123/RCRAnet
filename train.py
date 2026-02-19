@@ -25,8 +25,8 @@ parser.add_argument('--seed', type=int, default=1, help='random seed ')
 
 parser.add_argument('--l2_decay', type=float, default=1e-4, help='the L2  weight decay')
 parser.add_argument('--training_sample_ratio', type=float, default=0.8, )
-parser.add_argument('--re_ratio', type=int, default=5)  # 数据增强倍数
-parser.add_argument('--lr_scheduler', type=str, default='none')  # --lr_scheduler: 学习率调度器的类型，默认为'none'。
+parser.add_argument('--re_ratio', type=int, default=5) 
+parser.add_argument('--lr_scheduler', type=str, default='none')  
 parser.add_argument('--log_interval', type=int, default=10)
 parser.add_argument('--max_epoch', type=int, default=100)
 
@@ -49,8 +49,8 @@ group_train.add_argument('--lr', type=float, default=1e-4)
 
 parser.add_argument('--momentum', type=float, default=0.9, help='SGD momentum (default: 0.5)')
 group_train.add_argument('--batch_size', type=int, default=64)
-group_train.add_argument('--pro_dim', type=int, default=128)  # 判别器的输出通道数，默认为128。
-group_train.add_argument('--test_stride', type=int, default=1)  # 推断时的滑动窗口步幅，默认为1
+group_train.add_argument('--pro_dim', type=int, default=128)  
+group_train.add_argument('--test_stride', type=int, default=1)  
 group_da = parser.add_argument_group('Data augmentation')
 group_da.add_argument('--flip_augmentation', action='store_true', default=False,  # 是否进行随机翻转数据增强，默认为True。
                       help="Random flips (if patch_size > 1)")
@@ -68,16 +68,13 @@ def evaluate(net, val_loader, gpu, tgt=False):
 
     # 遍历验证数据加载器的每个批次
     for i, (x1, y1) in enumerate(val_loader):
-        # 将标签减去1，可能是为了处理从1开始的标签
         y1 = y1 - 1
 
-        # 禁用梯度计算，因为在评估阶段不需要进行梯度更新
         with torch.no_grad():
             # 将输入数据移到GPU上
             x1 = x1.to(gpu)
             # x1 = x1.unsqueeze(1).to(gpu)
 
-            # 使用神经网络进行推理，获取预测的类别
             p1 = net(x1, mode='')
             p1 = p1.argmax(dim=1)
 
@@ -100,7 +97,7 @@ def evaluate(net, val_loader, gpu, tgt=False):
         print(results['Confusion_matrix'], '\n', 'TPR:\n', np.round(results['TPR'] * 100, 2), '\n OA:',
               results['Accuracy'], 'AA:', sum(np.round(results['TPR'] * 100, 2)) / len(results['TPR']), 'Kappa:',
               results['Kappa'])
-    # 返回准确率
+
     return acc
 
 
@@ -330,3 +327,4 @@ def experiment():
 
 if __name__ == '__main__':
     experiment()
+
