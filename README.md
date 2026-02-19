@@ -27,9 +27,9 @@ File Structure:
 ```
 
 ## Requirements
-CUDA Version: 11.3
-torch: 1.11.0
-Python: 3.8.19
+- **Python**: 3.8.19  
+- **PyTorch**: 1.11.0  
+- **CUDA**: 11.3  
 
 
 ```
