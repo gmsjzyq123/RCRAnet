@@ -6,7 +6,6 @@
 - **CUDA**: 11.3  
 
 
-```
 ## Datasets
 
 The following datasets are used for experiments:
@@ -30,6 +29,7 @@ The following datasets are used for experiments:
  - `Loukia_gt_out68.mat: Corresponding ground truth labels for Loukia.
 
 File Structure:
+```
 datasets
 ├── Houston
 │   ├── Houston13.mat
