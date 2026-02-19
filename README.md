@@ -17,7 +17,11 @@ The following datasets are used for experiments:
   - `paviaU.mat`: Dataset for Pavia University.
   - `paviaU_7gt.mat`: Ground truth data for Pavia University.
 
-- **Indiana**: Contains hyperspectral images from the Indiana region.
+- HyRANK: A cross-scene hyperspectral dataset designed for domain generalization and land-cover classification tasks, consisting of two geographically distinct scenes:
+  - `Dioni.mat: Hyperspectral image of the Dioni scene.
+  - `Dioni_gt_out68.mat: Corresponding ground truth labels for Dioni.
+ - `Loukia.mat: Hyperspectral image of the Loukia scene.
+ - `Loukia_gt_out68.mat: Corresponding ground truth labels for Loukia.
 
 File Structure:
 ```
