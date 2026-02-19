@@ -54,10 +54,10 @@ Run the following command:
 ###  Houston Dataset
 
 ```bash
-python main.py --data_path ./datasets/Houston/ --source_name Houston13 --target_name Houston18 --batch_size 64 --re_ratio 5 --training_sample_ratio 0.8
+python train.py --data_path ./datasets/Houston/ --source_name Houston13 --target_name Houston18 --lambda_1 5e-2 --lambda_2 1e-2 --encodes 1 --training_sample_ratio 0.8
 ```
 ###  Pavia Dataset
 
 ```bash
-python main.py --data_path ./datasets/Pavia/ --source_name paviaU --target_name paviaC --batch_size 64 --re_ratio 5 --training_sample_ratio 0.8
+python train.py --data_path ./datasets/Pavia/ --source_name paviaU --target_name paviaC --lambda_1 1e-2 --lambda_2 1e-2 --encodes 2 --training_sample_ratio 0.8
 ``` 
