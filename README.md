@@ -21,6 +21,15 @@ The following datasets are used for experiments:
 
 File Structure:
 ```
+
+## Requirements
+CUDA Version: 11.3
+
+torch: 1.11.0
+
+Python: 3.8.19
+
+
 datasets
 ├── Houston
 │   ├── Houston13.mat
