@@ -1,6 +1,15 @@
 # Diversity-Driven Domain Generalization for Hyperspectral Image via Rank-Increased Attention Fusion.
 
 ```
+
+## Requirements
+- **Python**: 3.8.19  
+- **PyTorch**: 1.11.0  
+- **CUDA**: 11.3  
+
+```
+
+```
 ## Datasets
 
 The following datasets are used for experiments:
@@ -24,15 +33,6 @@ The following datasets are used for experiments:
  - `Loukia_gt_out68.mat: Corresponding ground truth labels for Loukia.
 
 File Structure:
-```
-
-## Requirements
-- **Python**: 3.8.19  
-- **PyTorch**: 1.11.0  
-- **CUDA**: 11.3  
-
-
-```
 datasets
 ├── Houston
 │   ├── Houston13.mat
