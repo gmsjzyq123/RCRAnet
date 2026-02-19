@@ -32,6 +32,11 @@ datasets
 │   └── paviaC_7gt.mat
 │   ├── paviaU.mat
 │   └── paviaU_7gt.mat
-└── Indiana
+└── HyRANK
+│   ├── Dioni.mat
+│   └── Dioni_gt_out68.mat
+│   ├── Loukia.mat
+│   └── Loukia_gt_out68.mat
 ```
+   
    
